@@ -17,6 +17,8 @@ PLAYER_VEL = 5
 
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 
+# Background and Player Generation
+
 # Main Events loop
 def main(window):
     # Clock event loop
@@ -29,6 +31,9 @@ def main(window):
             if event.type == pygame.QUIT:
                 run = False
                 break
+
+    pygame.quit()
+    quit()
 
 
 
