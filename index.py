@@ -17,9 +17,20 @@ PLAYER_VEL = 5
 
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 
-# Event loop
+# Main Events loop
 def main(window):
-    pass
+    # Clock event loop
+    clock = pygame.time.Clock()
+
+    run = True
+    while run:
+        clock.tick(FPS)
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                break
+
+
 
 if __name__ == "__main__":
     main(window)
